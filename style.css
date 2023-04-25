@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --main-color: #1e88e5;
+  --second-color: #66bb6a;
+}
+.container h1 {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--main-color);
+}
+.container .box {
+  height: calc(100vh - 57px);
+  text-align: center;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10%;
+  gap: 20px;
+}
+.container .box .info {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container .box .info span {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.container .box .info .sec::before {
+  content: "[ ";
+}
+.container .box .info .sec::after {
+  content: " ]";
+}
+.container .box .info .level select {
+  border: none;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+.container .box .info .level select option {
+  color: #000;
+}
+.container .box .info .level select:focus {
+  outline: none;
+}
+.container .box .pickedWord {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.container .box button {
+  border: none;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #66bb6a;
+  color: #fff;
+  cursor: pointer;
+}
+.container .box input {
+  border: 3px solid var(--main-color);
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  text-align: center;
+}
+.container .box input:focus {
+  outline: none;
+}
+.container .box .words-list {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .box .words-list div {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.container .box .stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+}
+.container .box .stats span {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.container .box .game-over {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.next {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: var(--second-color);
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
